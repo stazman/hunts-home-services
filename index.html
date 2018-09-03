@@ -1,75 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-<!-- <!– Prevents devices from zooming out or in and instead rely on the media query styling to change the layout accordingly -->  -->
+  <title>Hunt's Home Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    body, html {
+      height: 100%;
+    }
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Hunt's Home Services</title>
+    .bg {
+        /* The image used */
+        background-image: url("http://static.realtyexecutives.com/site-files/598c610c-b7b3-48cd-b688-c2fb054540d8");
+        /* https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj4-4bHwZ_dAhUElawKHXBdCXoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F842736148996709289%2F&psig=AOvVaw35lP7R5FWL2nmLH7fuc1OK&ust=1536087372082399 */
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+      /* .bg {
+      background-image: url("../images/architecture-building-buy-209296.jpg");
+      height: 100%; 
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+  } */
+  
+      
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    
+    footer {
+    position: fixed;
+    left: 0;
+    right: 5;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    /* color: white; */
+    text-align: right;
+    clear: left;
+    font-family: 'ABeeZee-Regular';
+    text-indent: 10px;
+    font-size: 15px;
+    line-height: 2em;
+    color: #ffffff;
+    /* margin-bottom: 0; */
+    }
+
+    
+    /* footer {
+      background-color: #333;
+      color: rgb(255, 255, 255);
+      padding: 15px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    </style>
 </head>
 <body class="bg">
-    <div > 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
 
-
-    <!-- <navbar>
-        This is where the navbar goes.
-    </navbar> -->
-        <!-- <h2>With a Container</h2>
-        <p>The w3-container class is one of the most important of the w3.CSS classes. It provides correct margins, padding, alignments, and more to common HTML elements.</p> -->
-    <!-- <div class="super-wrapper">
-        <div class="wrapper clearfix" id="fluid">
-            <div>
-                 Renovating?
-                 <!--<br> this makes a new line even in box-->
-            <!-- </div>
-            <div>
-                 Landscaping?
-            </div>
-            <div>
-                 Need a repair?
-                 <br>
-                 <img src="images/pulling-hair-out.png" alt="man pulling hair out" height="100" width="80"></img>
-            </div>
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
     </div> -->
-    <section>
-        This is a new section.
-    </section>
-    <footer>
-        &copy 2018 Stazman Productions. All Rights Reserved.
-    </footer>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../hunts-home-services/index.html">Home</a></li>
+        <li><a href="../hunts-home-services/about.html">About</a></li>
+        <li><a href="../hunts-home-services/past-project-photos.html">Past Project Photos</a></li>
+        <li><a href="../hunts-home-services/contact.html">Contact</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
     </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+      <p><a href="https://www.gayborhood.com/" target="_blank">Gayborhood Home Page</a></p>
+      <!-- <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p> -->
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome to Hunt's Home Services!</h1>
+      <p>We're here to help with everything your home needs ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;both inside and out!</p>      <!-- <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p> -->
+    </div>
+    <div class="col-sm-3 sidenav">
+      <div class="well">
+        <p>Renovating?</p>
+      </div>
+      <div class="well">
+        <p>Adding on to your home?</p>
+      </div>
+      <div class="well">
+        <p>Landscaping or hardscaping?</p>
+      </div>
+      <div class="well">
+        <p>Need a repair?</p>
+      </div>  
+      <div>
+          Call us at (205) 475-7597 or send us an email <a href="mailto:davidhunt296104@gmail.com">here </a>for a free estimate!
+      </div>  
+  
+    </div>
+  </div>
+</div>
+
+<!-- <footer class="container-fluid text-right"> -->
+<footer class="footer" class="bg">
+  <p>&copy 2018 Stazman Productions. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
