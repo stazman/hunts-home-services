@@ -1,13 +1,10 @@
 Issues:
 
-- keeping section boxes intact within srapper when reducing width
-- second box not falling like the last box when reducing width
+Fix responsive navbar on branch
+    follow web advice without as a list
+    code the hamburger icon correctly
 
-- successfully add a custom font
-how to deal with older versions IE6 and IE7 with border-box?
-
-- fix margin of first div
-
+Do SEO
 
 
 

@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function classToggle() {
+    const navs = document.querySelectorAll('.Navbar__Items')
+  
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+    document.querySelector('.Navbar__Link-toggle')
+      .addEventListener('click', classToggle);
+  </script>
   <style>
 
     body, html {
@@ -38,17 +47,36 @@
       background-size: cover;
   } */
   
-      
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
     .wide_image {
       padding: 0;
     }
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      display: flex;
+    }
+    
+    .Navbar__Link {
+  padding-right: 8px;
+}
+.Navbar__Items {
+  display: flex;
+}
+.Navbar__Items--right {
+  margin-left:auto;
+}
+.Navbar__Link-toggle {
+  display: none;
+}
+    /* <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"> */
+
+    .row.content {
+      height: 450px
+    }
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -94,13 +122,41 @@
     } */
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
+    @media only screen and (max-width: 767px) {
+
+      .Navbar__Items,
+      .Navbar {
+        flex-direction: column;
+      }
+
+      .Navbar__Items {
+        display:none;
+      }
+
+      .Navbar__Items--right {
+        margin-left:0;
+      }
+
+      .Navbar__ToggleShow {
+        display: flex;
+      }
+
+      .Navbar__Link-toggle {
+          align-self: flex-end;
+          display: initial;
+          position: absolute;
+          cursor: pointer;
+      } 
+
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
-    }
+      
+      .row.content {
+        height:auto;
+        } 
+      }
 
     h1, p {
     color: white;
@@ -113,13 +169,15 @@
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="before_and_after_photos.html">Before and After Photos</a></li>
-              <li><a href="gallery-photos.html">Photo Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
+  
+      <div class="collapse navbar-collapse" class="Navbar__Link Navbar__Link-toggle" id="myNavbar">
+              <i class="fas fa-bars"></i>
+          <ul class=".Navbar__Items">
+              <li class="active" class="Navbar__Link"><a href="index.html">Home</a></li>
+              <li class="Navbar__Link"><a href="about.html">About</a></li>
+              <li class="Navbar__Link"><a href="before_and_after_photos.html">Before and After Photos</a></li>
+              <li class="Navbar__Link"><a href="gallery-photos.html">Photo Gallery</a></li>
+              <li class="Navbar__Link"><a href="contact.html">Contact</a></li>
             </ul>
       </div>
     </div>
