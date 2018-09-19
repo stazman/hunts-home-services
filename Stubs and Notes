@@ -1,15 +1,16 @@
 Issues:
 
-- keeping section boxes intact within srapper when reducing width
-- second box not falling like the last box when reducing width
+- change size of before and after photos
 
-- successfully add a custom font
-how to deal with older versions IE6 and IE7 with border-box?
+- fix top margin of first div
+    W3schools bootstrap position
+    Book Notes for css properties hierarchy
 
-- fix margin of first div
+- input logo in navbar
+    W3schools inputs
 
-
-
+- customize height of top navbar
+    saved website
 
 UNUSED CODE
 
