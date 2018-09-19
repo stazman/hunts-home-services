@@ -33,21 +33,8 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      display: flex;
     }
     
-    .Navbar__Link {
-  padding-right: 8px;
-}
-.Navbar__Items {
-  display: flex;
-}
-.Navbar__Items--right {
-  margin-left:auto;
-}
-.Navbar__Link-toggle {
-  display: none;
-}
     /* <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -75,51 +62,33 @@
     }
     /* Set black background color, white text and some padding */
     
-    footer {
-    position: fixed;
-    left: 0;
-    right: 5;
-    bottom: 0;
-    width: 100%;
-    /* background-color: red; */
-    /* color: white; */
-    text-align: left;
-    clear: left;
-    font-family: 'ABeeZee-Regular';
-    text-indent: 10px;
-    font-size: 12px;
-    line-height: 2em;
-    color: #0f0f0f;
-    /* margin-bottom: 0; */
-    }
+      footer {
+      position: fixed;
+      left: 0;
+      right: 5;
+      bottom: 0;
+      width: 100%;
+      /* background-color: red; */
+      /* color: white; */
+      text-align: left;
+      clear: left;
+      font-family: 'ABeeZee-Regular';
+      text-indent: 10px;
+      font-size: 12px;
+      line-height: 2em;
+      color: #0f0f0f;
+      /* margin-bottom: 0; */
+      }
 
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media only screen and (max-width: 767px) {
-
-      .Navbar__Items,
-      .Navbar {
-        flex-direction: column;
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        /* padding: 15px; */
       }
-
-      .Navbar__Items {
-        display:none;
-      }
-
-      .Navbar__Items--right {
-        margin-left:0;
-      }
-
-      .Navbar__ToggleShow {
-        display: flex;
-      }
-
-      .Navbar__Link-toggle {
-          align-self: flex-end;
-          display: initial;
-          position: absolute;
-          cursor: pointer;
-      } 
+      .row.content {height:auto;} 
+    }
 
       .sidenav {
         height: auto;
@@ -128,14 +97,12 @@
       
       .row.content {
         height:auto;
-        } 
-      }
+      } 
 
-    h1, p {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    }
-    
+      h1, p {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }    
     /* .at-top{
       padding: 100px;
     } */
@@ -195,7 +162,7 @@
             <li><a href="gallery-photos.html">Photo Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-          <!-- <ul class="nav navbar-nav navbar-right">
+                  <!-- <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul> -->
@@ -203,7 +170,7 @@
       </div>
     </nav>
   <div class="container-fluid text-center">
-    <div class="col-sm-9 text-left" class="at-top"> 
+    <div class="col-sm-9 text-left"> 
       <h1>Welcome to Hunt's Home Services!</h1>
       <p>We're here to help with everything your home needs ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inside and out!</p> 
     </div>
