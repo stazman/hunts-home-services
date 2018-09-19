@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Hunt's Home Services</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <head>
+    <title>Hunt's Home Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+</html>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
-  
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-    }
-    document.querySelector('.Navbar__Link-toggle')
-      .addEventListener('click', classToggle);
-  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
 
     body, html {
@@ -23,34 +18,18 @@
     }
 
     .bg {
-        /* The image used */
         background-image: url("http://static.realtyexecutives.com/site-files/598c610c-b7b3-48cd-b688-c2fb054540d8");
-        /* https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj4-4bHwZ_dAhUElawKHXBdCXoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F842736148996709289%2F&psig=AOvVaw35lP7R5FWL2nmLH7fuc1OK&ust=1536087372082399 */
-        /* Full height */
         height: 100%;
-
-        /* Center and scale the image nicely */
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .call_us {
+    /* .call_us {
       color: white;
       margin-bottom: 3px;
-    }
-      /* .bg {
-      background-image: url("../images/architecture-building-buy-209296.jpg");
-      height: 100%; 
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-  } */
-  
-    .wide_image {
-      padding: 0;
-    }
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    } */
+      
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -115,12 +94,6 @@
     }
 
     
-    /* footer {
-      background-color: #333;
-      color: rgb(255, 255, 255);
-      padding: 15px;
-    } */
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media only screen and (max-width: 767px) {
 
@@ -150,7 +123,7 @@
 
       .sidenav {
         height: auto;
-        padding: 15px;
+        /* padding: 15px; */
       }
       
       .row.content {
@@ -162,12 +135,25 @@
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
-
+    
+    /* .at-top{
+      padding: 100px;
+    } */
     </style>
 </head>
 <body class="bg">
 
-  <nav class="navbar navbar-inverse">
+  
+    <!-- End -->
+    <!-- Your website Links -->
+
+ <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <!-- Brand and toggle button -->
+    <!-- <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> -->
+    <!-- </button>  -->
+    <!-- <nav class="navbar navbar-inverse">
     <div class="container-fluid">
   
       <div class="collapse navbar-collapse" class="Navbar__Link Navbar__Link-toggle" id="myNavbar">
@@ -181,14 +167,43 @@
             </ul>
       </div>
     </div>
-  </nav>
-    
-<div class="container-fluid text-center">    
-  <!-- <div class="row content"> -->
-    <!-- <div class="col-sm-1 sidenav"> -->
+  </nav> -->
 
-    <!-- </div> -->
-    <div class="col-sm-9 text-left"> 
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">Hunt's Home Services</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!-- <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li> -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="before_and_after_photos.html">Before and After Photos</a></li>
+            <li><a href="gallery-photos.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+  <div class="container-fluid text-center">
+    <div class="col-sm-9 text-left" class="at-top"> 
       <h1>Welcome to Hunt's Home Services!</h1>
       <p>We're here to help with everything your home needs ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inside and out!</p> 
     </div>
@@ -214,7 +229,6 @@
       <div class="call-us">
           <p><b>Call us at (205) 475-7597 or send us an email <a href="mailto:davidhunt296104@gmail.com">here </a>for a free estimate!</b></p>
       </div>  
-  
     </div>
   </div>
 </div>
