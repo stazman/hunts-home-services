@@ -1,12 +1,10 @@
+Current commit:
+
+changes file name from gallery-photos to photo-gallery; 
+
+
 Issues:
 
-<<<<<<< HEAD
-Fix responsive navbar on branch
-    follow web advice without as a list
-    code the hamburger icon correctly
-
-Do SEO
-=======
 - change size of before and after photos
 
 - fix top margin of first div
@@ -18,7 +16,6 @@ Do SEO
 
 - customize height of top navbar
     saved website
->>>>>>> responsive_navbar_with_bootstrap
 
 UNUSED CODE
 
