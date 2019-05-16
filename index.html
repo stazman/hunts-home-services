@@ -4,13 +4,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
       <title>Hunt&#39;s Home Services</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-    <br />
-    <br />
     <script>
       function happyCustomer () {
           var image = document.getElementById('before');
@@ -19,7 +17,7 @@
     </script>
     <style type="text/css">
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 360px) {
         .sidenav {
           height: auto;
         }
@@ -38,11 +36,33 @@
           background-size: 100%;
       }
 
-      .navbar {
-          background-color: #990000;
-          margin-bottom: 0;
-          border-radius: 0;
-          }
+      .navbar, .navbar-inverse {
+        background-color: #990000;
+        border-radius: 0;
+        border: none;
+        margin-top: 2%;
+        margin-bottom: 0;
+        min-height: 60px;
+      }
+    
+      .nav li {
+        display: inline;
+        color: white;
+      }
+
+      .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 25px 25px 18px 25px;
+      }
+
+      .navbar-inverse .navbar-nav li a:hover {
+        background-color: #444444;
+        transition: 0.7s all linear;
+        height: 100%;
+      }
 
       li a {
           color: #000;
@@ -93,26 +113,27 @@
       }
     </style>
 
-  <div id="image">
-      <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">    
-              </button>
-              <a class="navbar-brand" href="index.html">Hunt&#39;s Home Services</a>
-            </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <!--<li><a href="before_and_after_photos.html">Before and After Photos</a></li>-->
-                  <li><a href="photo-gallery.html">Photo Gallery</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
 
     <div class="container-fluid text-center">
       <div class="col-sm-9 text-left">
@@ -120,7 +141,6 @@
         <p style="font-size:22px;margin-left:5">We&#39;re here to help with everything your home      needs ... inside and out!
         </p>
     </div>
-<!-- <div class="row"> --><!-- This is for no price padding zone drawing --><!-- </div> -->
 
     <div class="col-sm-3 sidenav">
       <div class="well">

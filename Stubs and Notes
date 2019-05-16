@@ -1,21 +1,5 @@
-Current commit:
-
-changes file name from gallery-photos to photo-gallery; adds appropriate alt tags to gallery photos; removes unneeded comments from about and contact pages; styles footer; removes features from navbar
-
-
 Issues:
 
-- change size of before and after photos
-
-- fix top margin of first div
-    W3schools bootstrap position
-    Book Notes for css properties hierarchy
-
-- input logo in navbar
-    W3schools inputs
-
-- customize height of top navbar
-    saved website
 
 UNUSED CODE
 
