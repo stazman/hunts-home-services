@@ -1,6 +1,6 @@
 Current commit:
 
-changes file name from gallery-photos to photo-gallery; 
+changes file name from gallery-photos to photo-gallery; adds appropriate alt tags to gallery photos; removes unneeded comments from about and contact pages; styles footer; removes features from navbar
 
 
 Issues:
