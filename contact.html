@@ -44,22 +44,33 @@
           height: 100%;
         }
         
+        #page-container {
+          position: relative;
+          min-height: 100vh;
+        }
+  
+        #content-wrap {
+          padding-bottom: 2.5rem;    
+        }
+        
+        #footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2.5rem;            
+        }
+    
         #more-margin {
           margin-left: 5%;
           margin-top: 3%;
         }
   
         footer {
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
+          padding-right: 2%;
+          padding-bottom: 3%;
           text-align: right;
-          clear: left;
-          font-family: 'ABeeZee-Regular';
-          text-indent: 10px;
-          font-size: 15px;
-          line-height: 2em;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 1.2em;
           color: #ffffff;
         }
         
@@ -106,11 +117,10 @@
         </div>
       </div>
 
-      <footer class="footer">
-        <p style="text-align:left;margin-left:3%">&copy; 2019 Dreamsourcer Enterprises. All Rights Reserved.
-        </p>
-      </footer>
-    </body>
+    </div>
+      <footer id="footer">&copy; 2019 Dreamsourcer Enterprises. All Rights Reserved.</footer>
+    </div>
+  </body>
 </html>
 
 
