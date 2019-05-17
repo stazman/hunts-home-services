@@ -7,117 +7,129 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  
+    <style type="text/css">
+
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+  
+      #content-wrap {
+        padding-bottom: 2.5rem;    
+      }
+      
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;            
+      }
+  
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #be0d0d;
+      }
+  
+      .navbar, .navbar-inverse {
+        background-color: #990000;
+        border-radius: 0;
+        border: none;
+        margin-bottom: 0;
+        min-height: 60px;
+      }
+      
+      .nav li {
+        display: inline;
+        color: white;
+      }
+  
+      .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 25px 25px 18px 25px;
+      }
+  
+      .navbar-inverse .navbar-nav li a:hover {
+        background-color: #444444;
+        transition: 0.7s all linear;
+        height: 100%;
+      }
+  
+      #more-margin {
+        margin-left: 5%;
+        margin-top: 3%;
+      }
+  
+      footer {
+        padding-right: 2%;
+        padding-bottom: 3%;
+        text-align: right;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+        color: #ffffff;
+      }
+      
+      h1, p {
+        color: white;
+      }
+  
+    </style>
   </head>
-  <style type="text/css">
+  <body>
 
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #be0d0d;
-    }
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-    .navbar, .navbar-inverse {
-      background-color: #990000;
-      border-radius: 0;
-      border: none;
-      margin-bottom: 0;
-      min-height: 60px;
-    }
-    
-    .nav li {
-      display: inline;
-      color: white;
-    }
-
-    .navbar-inverse .navbar-nav > li > a {
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2em;
-      font-weight: 300;
-      padding: 25px 25px 18px 25px;
-    }
-
-    .navbar-inverse .navbar-nav li a:hover {
-      background-color: #444444;
-      transition: 0.7s all linear;
-      height: 100%;
-    }
-
-    #more-margin {
-      margin-left: 5%;
-      margin-top: 3%;
-    }
-
-    footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: right;
-      clear: left;
-      font-family: 'ABeeZee-Regular';
-      text-indent: 10px;
-      font-size: 15px;
-      line-height: 2em;
-      color: #ffffff;
-    }
-    
-    h1, p {
-      color: white;
-    }
-
-	</style>
-<body>
-
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photo-gallery.html">Photo Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="photo-gallery.html">Photo Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
  
-    <div class="container-fluid text-center">
-      <div class="row content">
-        <div class="col-sm-12 text-left" id="more-margin">
-          <h1>Hours of Operation</h1>
-          &nbsp;
+      <div class="container-fluid text-center">
+        <div class="row content">
+          <div class="col-sm-12 text-left" id="more-margin">
+            <h1>Hours of Operation</h1>
+            &nbsp;
 
-          <p>Mon: 8:00 AM - 5:00 PM</p>
+            <p>Mon: 8:00 AM - 5:00 PM</p>
 
-          <p>Tues: 8:00 AM - 5:00 PM</p>
+            <p>Tues: 8:00 AM - 5:00 PM</p>
 
-          <p>Wed: 8:00 AM - 5:00 PM</p>
+            <p>Wed: 8:00 AM - 5:00 PM</p>
 
-          <p>Thur: 8:00 AM - 5:00 PM</p>
+            <p>Thur: 8:00 AM - 5:00 PM</p>
 
-          <p>Fri: 8:00 AM - 5:00 PM</p>
+            <p>Fri: 8:00 AM - 5:00 PM</p>
 
-          <p>Sat: 9:00 AM - 6:00 PM</p>
+            <p>Sat: 9:00 AM - 6:00 PM</p>
 
-          <p>Sun: Closed</p>
+            <p>Sun: Closed</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <footer class="footer">
-      <p style="text-align:left;margin-left:3%">&copy; 2019 Dreamsourcer Enterprises. All Rights Reserved.</p>
-    </footer>
+      <footer id="footer">&copy; 2019 Dreamsourcer Enterprises. All Rights Reserved.</footer>
+    </div>
   </body>
 </html>
-
