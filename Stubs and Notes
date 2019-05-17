@@ -1,9 +1,6 @@
 Issues:
 
-    put css/js in head to follow best practices
-    reformat footer on nonindex pages
-    https://medium.freecodecamp.org/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c
-    reformat footer on index page with different tactic because of content overflow
+    reformat footer index page with different tactic because of content overflow
     make sure all photos have alts
 
     
